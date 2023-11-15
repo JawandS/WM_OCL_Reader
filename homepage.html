@@ -1,0 +1,407 @@
+
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>W&M &raquo; Search Open Courses</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="/courselist/static/images/wmcypher.png" type="image/x-icon">
+		<link rel="apple-touch-icon" href="/courselist/static/images/wmcypher.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="/courselist/static/images/wmcypher.png">
+		
+		<link rel="stylesheet"href="/courselist/static/css/wm_rt_style.css" />
+	
+		
+
+<meta name="layout" content="wmRDLayout"/>
+   
+   
+   <script src="/courselist/static/plugins/jquery-1.7.1/js/jquery/jquery-1.7.1.min.js" type="text/javascript" ></script>
+
+
+		
+		
+		
+		
+<script type="text/javascript">
+    var _gaq = _gaq || [];
+    
+    _gaq.push(['_setAccount', 'UA-35979429-2']);
+    _gaq.push(['_trackPageview']);
+    
+(function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+	</head>
+	<body>
+	<div id="container">
+		<header id="main_header">
+			<img id="cypher" src="/courselist/static/images/wmcypher.png" alt="William & Mary" width="106" height="97"/>
+			<a href="http://www.wm.edu" id="logo">
+			<img id="stacked_wordmark" src="/courselist/static/images/logo_with_line.png" alt="William & Mary" width="185" height="91"/>
+			<img id="single_line_wordmark" src="/courselist/static/images/single-line-wordmark.png" alt="William & Mary"/>
+			</a>
+			<h1 class="bannerTitle"> 
+			<a class="deptText Large" href="http://www.wm.edu"> Search Open Courses </a> <!-- This will pickup whatever title is in your views  -->
+			</h1>
+		</header>
+		
+	
+<div id ="content" >
+
+	<div id="h1" style="padding:5px">
+	
+		<h3>Select options for search</h3>
+     </div>
+		
+			<form action="/courselist/courseinfo/searchresults" method="get" >
+			<!-- Scraping this info? We have a REST API that probably makes everything easier. Contact support@wm.edu to request access. -->
+			<div class="phoneHeader">
+			<p1>Term</p1>
+			<p><select name="term_code" style="width:200px;font-size: 16px" id="term_code" >
+<option value="202410" >Fall 2023</option>
+<option value="202420" >Spring 2024</option>
+</select>
+              </p>
+             </div>
+             <div class="phoneHeader">
+
+             	 <p style="color: red">You must select a Subject or Attribute(s).</p>
+             	 
+              <p1>Subject</p1>
+              <p><select name="term_subj" style="width:200px;font-size: 16px" id="term_subj" >
+<option value="0">ALL</option>
+<option value="AFST" >Africana Studies</option>
+<option value="AMST" >American Studies</option>
+<option value="ANTH" >Anthropology</option>
+<option value="APSC" >Applied Science</option>
+<option value="ARAB" >Arabic</option>
+<option value="ART" >Art</option>
+<option value="ARTH" >Art History</option>
+<option value="AMES" >Asian &amp; Middle Eastern Studies</option>
+<option value="APIA" >Asian&amp;Pac Islander American St</option>
+<option value="BIOL" >Biology</option>
+<option value="BUAD" >Business Administration</option>
+<option value="CHEM" >Chemistry</option>
+<option value="CHIN" >Chinese</option>
+<option value="CLCV" >Classical Civilization</option>
+<option value="COLL" >College Courses</option>
+<option value="CMST" >Community Studies</option>
+<option value="CAMS" >Comp/App Math &amp; Stats</option>
+<option value="CSCI" >Computer Science</option>
+<option value="CONS" >Conservation</option>
+<option value="CRWR" >Creative Writing</option>
+<option value="CRIN" >Curriculum &amp; Instruction</option>
+<option value="DANC" >Dance</option>
+<option value="DATA" >Data Science</option>
+<option value="ECON" >Economics</option>
+<option value="EPPL" >Ed Policy Planning Leadership</option>
+<option value="EDUC" >Education</option>
+<option value="ELEM" >Elementary Education</option>
+<option value="EPAD" >Eng Phys &amp; Applied Design</option>
+<option value="ENGL" >English</option>
+<option value="ENSP" >Environment &amp; Sustainability</option>
+<option value="EURS" >European Studies</option>
+<option value="FMST" >Film and Media Studies</option>
+<option value="FREN" >French &amp; Francophone Studies</option>
+<option value="GSWS" >Gender/Sexuality &amp; Women&#39;s Std</option>
+<option value="GIS" >Geographic Information Systems</option>
+<option value="GEOL" >Geology</option>
+<option value="GRMN" >German Studies</option>
+<option value="GBST" >Global Studies</option>
+<option value="GOVT" >Government</option>
+<option value="GRAD" >Graduate</option>
+<option value="GREK" >Greek</option>
+<option value="HSCI" >Health Sciences</option>
+<option value="HBRW" >Hebrew</option>
+<option value="HISP" >Hispanic Studies</option>
+<option value="HIST" >History</option>
+<option value="INTR" >Interdisciplinary Studies</option>
+<option value="INRL" >International Relations</option>
+<option value="ITAL" >Italian</option>
+<option value="JAPN" >Japanese</option>
+<option value="KINE" >Kinesiology &amp; Hlth Sciences</option>
+<option value="LATN" >Latin</option>
+<option value="LAS" >Latin American Studies</option>
+<option value="LAW" >Law</option>
+<option value="LING" >Linguistics</option>
+<option value="MSCI" >Marine Science</option>
+<option value="MATH" >Mathematics</option>
+<option value="MREN" >Medieval &amp; Renaissance Studies</option>
+<option value="MLSC" >Military Science</option>
+<option value="MDLL" >Modern Languages/Literatures</option>
+<option value="MUSC" >Music</option>
+<option value="NSCI" >Neuroscience</option>
+<option value="PHIL" >Philosophy</option>
+<option value="PHYS" >Physics</option>
+<option value="PSYC" >Psychology</option>
+<option value="PBHL" >Public Health</option>
+<option value="PUBP" >Public Policy</option>
+<option value="RELG" >Religious Studies</option>
+<option value="RUSN" >Russian</option>
+<option value="RPSS" >Russian &amp; Post-Soviet Studies</option>
+<option value="SOCL" >Sociology</option>
+<option value="SPCH" >Speech</option>
+<option value="THEA" >Theatre</option>
+<option value="WRIT" >Writing</option>
+</select>
+				</p>
+              </div>
+               <div class="phoneHeader">
+              <p1>Attribute</p1>
+              <p><select name="attr" style="width:200px;font-size: 16px" id="attr" >
+<option value="0">ALL</option>
+<option value="ANAR" >ANTH Archaeology Req -- ANAR</option>
+<option value="ABIA" >ANTH Biological Anth Req -- ABIA</option>
+<option value="ANLG" >ANTH Linguistic Anthropology -- ANLG</option>
+<option value="SCAN" >ANTH Socio Cultural Req -- SCAN</option>
+<option value="ACTV" >Active Learning -- ACTV</option>
+<option value="FEE" >Additional Fee Required -- FEE</option>
+<option value="ALB" >American Lit before 1920 -- ALB</option>
+<option value="ALV" >Arts Letters Values -- ALV</option>
+<option value="ARTS" >Arts Proficiency (ARTS) -- ARTS</option>
+<option value="GE6" >Arts Proficiency (GER6) -- GE6</option>
+<option value="BLB4" >BIOL 400 Level Lab Course -- BLB4</option>
+<option value="BLB" >British Lit before 1700 -- BLB</option>
+<option value="BLT" >British Lit between 1700-1900 -- BLT</option>
+<option value="BLAW" >Business Law -- BLAW</option>
+<option value="BLWF" >Business Law - Foundational -- BLWF</option>
+<option value="BLWS" >Business Law - Supporting -- BLWS</option>
+<option value="CHEL" >Chemistry Electives -- CHEL</option>
+<option value="C100" >College 100 -- C100</option>
+<option value="C150" >College 150 -- C150</option>
+<option value="C200" >College 200 -- C200</option>
+<option value="C30C" >College 300 (Campus Based) -- C30C</option>
+<option value="C30D" >College 300 (Domestic) -- C30D</option>
+<option value="C30G" >College 300 (Global) -- C30G</option>
+<option value="C350" >College 350 -- C350</option>
+<option value="C400" >College 400 -- C400</option>
+<option value="MATC" >Computational Mathematics -- MATC</option>
+<option value="CR" >Constructions of Race -- CR</option>
+<option value="CLS" >Crim, Law, &amp; Society -- CLS</option>
+<option value="RLWF" >Criminal Law - Foundational -- RLWF</option>
+<option value="RLWS" >Criminal Law - Supporting -- RLWS</option>
+<option value="CRIM" >Criminal Law Experiential -- CRIM</option>
+<option value="CSI" >Culture Society Individual -- CSI</option>
+<option value="DC" >Department Chair Required -- DC</option>
+<option value="NLWF" >Env &amp; Nat Res Law - Fndtnl -- NLWF</option>
+<option value="NLWS" >Env &amp; Nat Res Law - Supptng -- NLWS</option>
+<option value="ENVR" >Environmental Law Experiential -- ENVR</option>
+<option value="EXP" >Experiential -- EXP</option>
+<option value="FLP" >Foreign Lang Proficiency -- FLP</option>
+<option value="G2LA" >G2LA Natural Sci-Physical Lab -- G2LA</option>
+<option value="G2LB" >G2LB Natural Sci-Bio Lab -- G2LB</option>
+<option value="GE1" >GE1Math/Quantitative Reasoning -- GE1</option>
+<option value="GE2A" >GE2A Natural Sci-Physical -- GE2A</option>
+<option value="GE2B" >GE2B Natural Sci-Biological -- GE2B</option>
+<option value="GE2L" >GE2L Natural Science Lab -- GE2L</option>
+<option value="GE3" >GE3 Social Sciences -- GE3</option>
+<option value="GE4A" >GE4A Hist/Cultr Euro Tradition -- GE4A</option>
+<option value="GE4B" >GE4B Hist/Cult outside EurTrad -- GE4B</option>
+<option value="GE4C" >GE4C Cross-Cultural Issues -- GE4C</option>
+<option value="GE5" >GE5 Lit/Hist of the Arts -- GE5</option>
+<option value="GE7" >GE7 Phil/Relig/Soc Thought -- GE7</option>
+<option value="GIN" >GSWS Gender &amp; Intl Issues -- GIN</option>
+<option value="GRE" >GSWS Gender/Race/Eth Issues -- GRE</option>
+<option value="LGBT" >GSWS LGBTQ Issues -- LGBT</option>
+<option value="GLOB" >Globalization -- GLOB</option>
+<option value="GUAR" >Guaranteed Summer Offering -- GUAR</option>
+<option value="HMWB" >Health, Med, &amp; Well-Being -- HMWB</option>
+<option value="HIPP" >High Impact Projects -- HIPP</option>
+<option value="HIPT" >High Impact Projects -- HIPT</option>
+<option value="IRCP" >INRL Capstone -- IRCP</option>
+<option value="IN" >Instructor Permission Required -- IN</option>
+<option value="ILWF" >Intellectual Prop Law-Fndtnl -- ILWF</option>
+<option value="ILWS" >Intellectual Prop Law-Supptng -- ILWS</option>
+<option value="INTC" >Intellectual Property Exp -- INTC</option>
+<option value="INTN" >International Law Experiential -- INTN</option>
+<option value="TLWF" >International Law-Foundational -- TLWF</option>
+<option value="TLWS" >International Law-Supporting -- TLWS</option>
+<option value="JDST" >Judaic Studies Requirement -- JDST</option>
+<option value="LWWR" >Law Writing Requirement -- LWWR</option>
+<option value="LS" >Literature since 1900 -- LS</option>
+<option value="MATH" >Math Proficiency -- MATH</option>
+<option value="NQR" >Nat World Quant Reasoning -- NQR</option>
+<option value="NATV" >Natv Stds Minor Core -- NATV</option>
+<option value="OC" >On Campus -- OC</option>
+<option value="ON" >Online Course -- ON</option>
+<option value="MATO" >Operations Research -- MATO</option>
+<option value="P/F" >Pass/Fail Course -- P/F</option>
+<option value="POLI" >Political Law Experential -- POLI</option>
+<option value="POLF" >Political Law Foundational -- POLF</option>
+<option value="POLS" >Political Law Supporting -- POLS</option>
+<option value="MATP" >Probability &amp; Statistics -- MATP</option>
+<option value="MATS" >Scientific Applications -- MATS</option>
+<option value="SHCR" >Short Course -- SHCR</option>
+<option value="SA" >Single Author/Film Auteur -- SA</option>
+<option value="SPPJ" >Soc Prob, Pol, &amp; Justice -- SPPJ</option>
+<option value="SJSP" >Social Justice Experiential -- SJSP</option>
+<option value="SJWF" >Social Justice Law - Fndtnl -- SJWF</option>
+<option value="SJWS" >Social Justice Law Supporting -- SJWS</option>
+<option value="SUST" >Sustainability Courses -- SUST</option>
+<option value="WINT" >Winter Course -- WINT</option>
+</select>
+			   </p>
+			    </div>
+               <div class="phoneHeader">
+              <p2>2nd Attribute</p2>
+              <p><select name="attr2" style="width:200px;font-size: 16px" id="attr2" >
+<option value="0">ALL</option>
+<option value="ANAR" >ANTH Archaeology Req -- ANAR</option>
+<option value="ABIA" >ANTH Biological Anth Req -- ABIA</option>
+<option value="ANLG" >ANTH Linguistic Anthropology -- ANLG</option>
+<option value="SCAN" >ANTH Socio Cultural Req -- SCAN</option>
+<option value="ACTV" >Active Learning -- ACTV</option>
+<option value="FEE" >Additional Fee Required -- FEE</option>
+<option value="ALB" >American Lit before 1920 -- ALB</option>
+<option value="ALV" >Arts Letters Values -- ALV</option>
+<option value="ARTS" >Arts Proficiency (ARTS) -- ARTS</option>
+<option value="GE6" >Arts Proficiency (GER6) -- GE6</option>
+<option value="BLB4" >BIOL 400 Level Lab Course -- BLB4</option>
+<option value="BLB" >British Lit before 1700 -- BLB</option>
+<option value="BLT" >British Lit between 1700-1900 -- BLT</option>
+<option value="BLAW" >Business Law -- BLAW</option>
+<option value="BLWF" >Business Law - Foundational -- BLWF</option>
+<option value="BLWS" >Business Law - Supporting -- BLWS</option>
+<option value="CHEL" >Chemistry Electives -- CHEL</option>
+<option value="C100" >College 100 -- C100</option>
+<option value="C150" >College 150 -- C150</option>
+<option value="C200" >College 200 -- C200</option>
+<option value="C30C" >College 300 (Campus Based) -- C30C</option>
+<option value="C30D" >College 300 (Domestic) -- C30D</option>
+<option value="C30G" >College 300 (Global) -- C30G</option>
+<option value="C350" >College 350 -- C350</option>
+<option value="C400" >College 400 -- C400</option>
+<option value="MATC" >Computational Mathematics -- MATC</option>
+<option value="CR" >Constructions of Race -- CR</option>
+<option value="CLS" >Crim, Law, &amp; Society -- CLS</option>
+<option value="RLWF" >Criminal Law - Foundational -- RLWF</option>
+<option value="RLWS" >Criminal Law - Supporting -- RLWS</option>
+<option value="CRIM" >Criminal Law Experiential -- CRIM</option>
+<option value="CSI" >Culture Society Individual -- CSI</option>
+<option value="DC" >Department Chair Required -- DC</option>
+<option value="NLWF" >Env &amp; Nat Res Law - Fndtnl -- NLWF</option>
+<option value="NLWS" >Env &amp; Nat Res Law - Supptng -- NLWS</option>
+<option value="ENVR" >Environmental Law Experiential -- ENVR</option>
+<option value="EXP" >Experiential -- EXP</option>
+<option value="FLP" >Foreign Lang Proficiency -- FLP</option>
+<option value="G2LA" >G2LA Natural Sci-Physical Lab -- G2LA</option>
+<option value="G2LB" >G2LB Natural Sci-Bio Lab -- G2LB</option>
+<option value="GE1" >GE1Math/Quantitative Reasoning -- GE1</option>
+<option value="GE2A" >GE2A Natural Sci-Physical -- GE2A</option>
+<option value="GE2B" >GE2B Natural Sci-Biological -- GE2B</option>
+<option value="GE2L" >GE2L Natural Science Lab -- GE2L</option>
+<option value="GE3" >GE3 Social Sciences -- GE3</option>
+<option value="GE4A" >GE4A Hist/Cultr Euro Tradition -- GE4A</option>
+<option value="GE4B" >GE4B Hist/Cult outside EurTrad -- GE4B</option>
+<option value="GE4C" >GE4C Cross-Cultural Issues -- GE4C</option>
+<option value="GE5" >GE5 Lit/Hist of the Arts -- GE5</option>
+<option value="GE7" >GE7 Phil/Relig/Soc Thought -- GE7</option>
+<option value="GIN" >GSWS Gender &amp; Intl Issues -- GIN</option>
+<option value="GRE" >GSWS Gender/Race/Eth Issues -- GRE</option>
+<option value="LGBT" >GSWS LGBTQ Issues -- LGBT</option>
+<option value="GLOB" >Globalization -- GLOB</option>
+<option value="GUAR" >Guaranteed Summer Offering -- GUAR</option>
+<option value="HMWB" >Health, Med, &amp; Well-Being -- HMWB</option>
+<option value="HIPP" >High Impact Projects -- HIPP</option>
+<option value="HIPT" >High Impact Projects -- HIPT</option>
+<option value="IRCP" >INRL Capstone -- IRCP</option>
+<option value="IN" >Instructor Permission Required -- IN</option>
+<option value="ILWF" >Intellectual Prop Law-Fndtnl -- ILWF</option>
+<option value="ILWS" >Intellectual Prop Law-Supptng -- ILWS</option>
+<option value="INTC" >Intellectual Property Exp -- INTC</option>
+<option value="INTN" >International Law Experiential -- INTN</option>
+<option value="TLWF" >International Law-Foundational -- TLWF</option>
+<option value="TLWS" >International Law-Supporting -- TLWS</option>
+<option value="JDST" >Judaic Studies Requirement -- JDST</option>
+<option value="LWWR" >Law Writing Requirement -- LWWR</option>
+<option value="LS" >Literature since 1900 -- LS</option>
+<option value="MATH" >Math Proficiency -- MATH</option>
+<option value="NQR" >Nat World Quant Reasoning -- NQR</option>
+<option value="NATV" >Natv Stds Minor Core -- NATV</option>
+<option value="OC" >On Campus -- OC</option>
+<option value="ON" >Online Course -- ON</option>
+<option value="MATO" >Operations Research -- MATO</option>
+<option value="P/F" >Pass/Fail Course -- P/F</option>
+<option value="POLI" >Political Law Experential -- POLI</option>
+<option value="POLF" >Political Law Foundational -- POLF</option>
+<option value="POLS" >Political Law Supporting -- POLS</option>
+<option value="MATP" >Probability &amp; Statistics -- MATP</option>
+<option value="MATS" >Scientific Applications -- MATS</option>
+<option value="SHCR" >Short Course -- SHCR</option>
+<option value="SA" >Single Author/Film Auteur -- SA</option>
+<option value="SPPJ" >Soc Prob, Pol, &amp; Justice -- SPPJ</option>
+<option value="SJSP" >Social Justice Experiential -- SJSP</option>
+<option value="SJWF" >Social Justice Law - Fndtnl -- SJWF</option>
+<option value="SJWS" >Social Justice Law Supporting -- SJWS</option>
+<option value="SUST" >Sustainability Courses -- SUST</option>
+<option value="WINT" >Winter Course -- WINT</option>
+</select>
+			   </p>
+              </div>
+                <div class="phoneHeader">
+              <p1>Level</p1>
+              <p><select name="levl" style="width:200px;font-size: 16px" id="levl" >
+<option value="0">ALL</option>
+<option value="GA" >Graduate - Arts and Sciences -- GA</option>
+<option value="GB" >Graduate - Business -- GB</option>
+<option value="GE" >Graduate - Education -- GE</option>
+<option value="GM" >Graduate - Marine Science -- GM</option>
+<option value="LW" >Law - First Professional -- LW</option>
+<option value="UG" >Undergraduate -- UG</option>
+</select>
+			</p>
+              </div>
+                 <div class="phoneHeader">
+              <p1>Status</p1>
+              <p><select name="status" style="width:200px;font-size: 16px" id="status" >
+<option value="0">ALL</option>
+<option value="OPEN" >OPEN</option>
+<option value="CLOSED" >CLOSED</option>
+</select>
+			  </p>
+               </div>
+                <div class="phoneHeader">
+               <p2>Part of Term</p2>
+              <p><select name="ptrm" style="width:200px;font-size: 16px" id="ptrm" >
+<option value="0">ALL</option>
+<option value="1" >Full Term -- 1</option>
+<option value="M" >Graduate Business -- M</option>
+<option value="E" >Graduate Education -- E</option>
+<option value="L" >Law -- L</option>
+<option value="A" >Module A -- A</option>
+<option value="B" >Module B -- B</option>
+<option value="NSU" >Non Standard Undergraduate -- NSU</option>
+<option value="S1" >Sum Sess 1 -- S1</option>
+<option value="S2" >Sum Sess 2 -- S2</option>
+<option value="S3" >Sum Sess 3 -- S3</option>
+<option value="S4" >Sum Sess 4 -- S4</option>
+<option value="NS" >Sum Sess Non Standard -- NS</option>
+<option value="AB" >Summer Study Abroad -- AB</option>
+</select>
+			</p>
+		       </div>
+			
+		<div class = "srchButtonFront">
+		 <input type="submit" name="search" value="Search" id="search" />
+		</form>
+		
+		</div>
+
+ </div>	
+	
+		<footer id="main_footer">
+				<div class="college-info">
+					<p class="college-name">William & Mary</p>
+					<p class="college-location">Williamsburg, VA.  <a href="http://www.wm.edu/contactus/index.php">Contact Us</a></p>
+					<p class="rights-reserved">All Rights Reserved © 2014</p>
+				</div>
+			</footer>
+	</div>
+		
+		
+	</body>
+</html>
