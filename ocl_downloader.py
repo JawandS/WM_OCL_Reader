@@ -45,7 +45,7 @@ def get_courses(course_code):
     with open(f"{dir_path}\\data.csv", "a") as f:
         # collect data
         for column in table.tbody.find_all('td'):
-            # if the column is a link start a new rwo in the csv
+            # if the column is a link start a new row in the csv
             if column.find("a") != None:
                 f.write("\n")
                 # get the text from the a
@@ -54,7 +54,7 @@ def get_courses(course_code):
                 to_write = column.text
                 if not to_write:
                     to_write = ""
-                f.write(f"{to_write.strip()},")
+                f.write(f"{to_write.strip().replace(',', '')},")
 
 def main():
     # get the course codes
