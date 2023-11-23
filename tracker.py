@@ -19,7 +19,7 @@ from google.auth.transport.requests import Request
 import os.path
 import pickle
 
-UPDATE_COURSELIST_FLAG = False
+UPDATE_COURSELIST_FLAG = True
 
 def send_email(email):
     try:
