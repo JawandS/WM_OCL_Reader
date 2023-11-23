@@ -1,8 +1,9 @@
 # imports
 from bs4 import BeautifulSoup as bs
 import urllib.request
+import os
 
-dir_path = "C:\\Users\\jawan\\OneDrive\\Documents\\Files\\College\\DataStruct\\ocl_reader"
+dir_path = os.getcwd()
 homepage = "https://courselist.wm.edu/courselist/courseinfo/"
 
 # go through and get all of the subjects 
@@ -55,8 +56,7 @@ def get_courses(course_code):
                     to_write = ""
                 f.write(f"{to_write.strip()},")
 
-# main method
-if __name__ == "__main__":
+def main():
     # get the course codes
     course_codes = ['AFST', 'AMST', 'ANTH', 'APSC', 'ARAB', 'ART', 'ARTH', 'AMES', 'APIA', 'BIOL', 'BUAD', 'CHEM', 'CHIN', 'CLCV', 'COLL', 'CMST', 'CAMS', 'CSCI', 'CONS', 'CRWR', 'CRIN', 'DANC', 'DATA', 'ECON', 'EPPL', 'EDUC', 'ELEM', 'EPAD', 'ENGL', 'ENSP', 'EURS', 'FMST', 'FREN', 'GSWS', 'GIS', 'GEOL', 'GRMN', 'GBST', 'GOVT', 'GRAD', 'GREK', 'HSCI', 'HBRW', 'HISP', 'HIST', 'INTR', 'INRL', 'ITAL', 'JAPN', 'KINE', 'LATN', 'LAS', 'LAW', 'LING', 'MSCI', 'MATH', 'MREN', 'MLSC', 'MDLL', 'MUSC', 'NSCI', 'PHIL', 'PHYS', 'PSYC', 'PBHL', 'PUBP', 'RELG', 'RUSN', 'RPSS', 'SOCL', 'SPCH', 'THEA', 'WRIT']
     # create the data csv
@@ -65,4 +65,8 @@ if __name__ == "__main__":
     # go through each course code and add all open courses to the csv
     for code in course_codes:
         get_courses(code)
+
+# main method
+if __name__ == "__main__":
+    main()
     
