@@ -33,7 +33,7 @@ def get_course_names():
 
 # go through each course code and get all open courses
 def get_courses(course_code):
-    page_url = f"https://courselist.wm.edu/courselist/courseinfo/searchresults?term_code=202420&term_subj={course_code}&attr=0&attr2=0&levl=0&status=OPEN&ptrm=0&search=Search"
+    page_url = f"https://courselist.wm.edu/courselist/courseinfo/searchresults?term_code=202420&term_subj={course_code}&attr=0&attr2=0&levl=0&ptrm=0&search=Search"
     # get the html
     fp = urllib.request.urlopen(page_url)
     mybytes = fp.read() 
