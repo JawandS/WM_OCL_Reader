@@ -57,7 +57,8 @@ def get_courses(course_code):
 
 def main():
     # get the course codes
-    course_codes = ['AFST', 'AMST', 'ANTH', 'APSC', 'ARAB', 'ART', 'ARTH', 'AMES', 'APIA', 'BIOL', 'BUAD', 'CHEM', 'CHIN', 'CLCV', 'COLL', 'CMST', 'CAMS', 'CSCI', 'CONS', 'CRWR', 'CRIN', 'DANC', 'DATA', 'ECON', 'EPPL', 'EDUC', 'ELEM', 'EPAD', 'ENGL', 'ENSP', 'EURS', 'FMST', 'FREN', 'GSWS', 'GIS', 'GEOL', 'GRMN', 'GBST', 'GOVT', 'GRAD', 'GREK', 'HSCI', 'HBRW', 'HISP', 'HIST', 'INTR', 'INRL', 'ITAL', 'JAPN', 'KINE', 'LATN', 'LAS', 'LAW', 'LING', 'MSCI', 'MATH', 'MREN', 'MLSC', 'MDLL', 'MUSC', 'NSCI', 'PHIL', 'PHYS', 'PSYC', 'PBHL', 'PUBP', 'RELG', 'RUSN', 'RPSS', 'SOCL', 'SPCH', 'THEA', 'WRIT']
+    # course_codes = ['AFST', 'AMST', 'ANTH', 'APSC', 'ARAB', 'ART', 'ARTH', 'AMES', 'APIA', 'BIOL', 'BUAD', 'CHEM', 'CHIN', 'CLCV', 'COLL', 'CMST', 'CAMS', 'CSCI', 'CONS', 'CRWR', 'CRIN', 'DANC', 'DATA', 'ECON', 'EPPL', 'EDUC', 'ELEM', 'EPAD', 'ENGL', 'ENSP', 'EURS', 'FMST', 'FREN', 'GSWS', 'GIS', 'GEOL', 'GRMN', 'GBST', 'GOVT', 'GRAD', 'GREK', 'HSCI', 'HBRW', 'HISP', 'HIST', 'INTR', 'INRL', 'ITAL', 'JAPN', 'KINE', 'LATN', 'LAS', 'LAW', 'LING', 'MSCI', 'MATH', 'MREN', 'MLSC', 'MDLL', 'MUSC', 'NSCI', 'PHIL', 'PHYS', 'PSYC', 'PBHL', 'PUBP', 'RELG', 'RUSN', 'RPSS', 'SOCL', 'SPCH', 'THEA', 'WRIT']
+    course_codes = ["PHIL", "ECON"]
     # create the data csv
     with open("data.csv", "w") as f:
         f.write("CRN,COURSE ID,CRSE ATTR,TITLE,INSTRUCTOR,CRDT HRS,MEET DAY:TIME,PROJ ENR,CURR ENR,SEATS AVAIL,STATUS")

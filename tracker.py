@@ -82,7 +82,7 @@ def generate_email(courses_to_update_user):
         crn = course_data["CRN"]
         status = course_data["STATUS"]
         email += f"Course: {course_name} ({crn}) is now {status}\n"
-    email += f"Generated at: {pd.Timestamp.now()}"
+    email += f"\nGenerated at: {pd.Timestamp.now()}"
     return email
 
 def check_for_updates():
